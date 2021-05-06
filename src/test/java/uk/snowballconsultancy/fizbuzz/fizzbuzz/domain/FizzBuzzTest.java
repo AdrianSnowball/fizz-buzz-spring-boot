@@ -40,4 +40,13 @@ class FizzBuzzTest {
         assertThat(result, equalTo("Fizz"));
     }
 
+
+    @ParameterizedTest
+    @ValueSource(ints = {5, 10, 20, 25, 80, 100})
+    public void weGetBuzzWhenMultipleOfFive(int number) {
+
+        String result = fizzBuzz.calculate(number);
+        assertThat(result, equalTo("Buzz"));
+    }
+
 }
