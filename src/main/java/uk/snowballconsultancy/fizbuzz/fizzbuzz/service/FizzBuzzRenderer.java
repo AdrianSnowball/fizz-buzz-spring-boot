@@ -29,10 +29,16 @@ public class FizzBuzzRenderer {
 
     private String buildLineResult(int number) {
         String multiplesResult = fizzBuzz.calculate(number);
-        if (multiplesResult.contains("3")) {
+        boolean hasThreeText = multiplesResult.contains("3");
+        boolean hasFiveText = multiplesResult.contains("5");
+
+        if(hasThreeText && hasFiveText){
+            return "FizzBuzz";
+        }
+        if (hasThreeText) {
             return "Fizz";
         }
-        if (multiplesResult.contains("5")) {
+        if (hasFiveText) {
             return "Buzz";
         }
         return multiplesResult;

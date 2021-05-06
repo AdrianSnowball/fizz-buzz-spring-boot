@@ -53,4 +53,15 @@ class FizzBuzzRendererTest {
         String result = fizzBuzzRenderer.fetchResult();
         assertThat(result, startsWith("1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nBuzz"));
     }
+
+
+    @Test
+    public void weOutputBasedOnIfNumberContains3And5(){
+
+        when(mockFizzBuzz.calculate(anyInt())).thenReturn("1");
+        when(mockFizzBuzz.calculate(35)).thenReturn("35");
+
+        String result = fizzBuzzRenderer.fetchResult();
+        assertThat(result, startsWith("1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nFizzBuzz"));
+    }
 }

@@ -77,7 +77,7 @@ public class FizzBuzzFunctionalTest {
                     "Buzz\n" +
                     "Fizz\n" +
                     "Buzz\n" +
-                    "Fizz\n" +
+                    "FizzBuzz\n" +
                     "Fizz\n" +
                     "Buzz\n" +
                     "Buzz\n" +
