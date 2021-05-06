@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FizzBuzzService {
+
     public String fetchResult() {
         return "";
     }

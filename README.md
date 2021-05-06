@@ -22,3 +22,9 @@ writing the code by test driving it with Unit tests that emerge a design.
 
 This is the point where I have a passing functional test it simply asserts the endpoint is up 
 and returning a OK response.
+
+####Significant Commit 2
+
+Now I am test driving using red green refactor and have a green test. Normally I would have written a degenerate or 
+edge case test first but because the criteria is clear that we will only ever send ints 1..100 there are none I can 
+think of. I have written the smallest amount of code to pass the test. 
