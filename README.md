@@ -40,3 +40,7 @@ Parameterized test for multiples of 3.
 ####Significant Commit 5
 
 Refactoring for readability.
+
+####Significant Commit 6
+
+Implemented service for outputting results.

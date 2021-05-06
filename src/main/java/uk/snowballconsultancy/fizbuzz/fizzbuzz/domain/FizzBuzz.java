@@ -1,5 +1,8 @@
 package uk.snowballconsultancy.fizbuzz.fizzbuzz.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class FizzBuzz {
 
     public String calculate(int input) {
