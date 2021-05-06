@@ -35,4 +35,8 @@ Minimum code for getting input of 3 working.
 
 ####Significant Commit 4
 
-Parameterized test for multiples of 3
+Parameterized test for multiples of 3.
+
+####Significant Commit 5
+
+Refactoring for readability.
