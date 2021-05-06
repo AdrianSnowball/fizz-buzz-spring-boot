@@ -1,6 +1,5 @@
 package uk.snowballconsultancy.fizbuzz.fizzbuzz.controller;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -22,6 +21,6 @@ public class FizzBuzzController {
     public ResponseEntity<String> fetchFizzBuzz(){
 
         String result = fizzBuzzService.fetchResult();
-        return new ResponseEntity<String>(result, OK);
+        return new ResponseEntity<>(result, OK);
     }
 }

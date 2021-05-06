@@ -28,3 +28,7 @@ and returning a OK response.
 Now I am test driving using red green refactor and have a green test. Normally I would have written a degenerate or 
 edge case test first but because the criteria is clear that we will only ever send ints 1..100 there are none I can 
 think of. I have written the smallest amount of code to pass the test. 
+
+####Significant Commit 3
+
+Mininum code for getting input of 3 working.
