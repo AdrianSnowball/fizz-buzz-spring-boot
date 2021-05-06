@@ -20,10 +20,18 @@ public class FizzBuzzRenderer {
 
         IntStream range = IntStream.rangeClosed(1, 100);
 
-        range.forEach(number ->{
-            builder.append(fizzBuzz.calculate(number));
+        range.forEach(number -> {
+            builder.append(buildLineResult(number));
             builder.append("\n");
         });
         return builder.toString();
+    }
+
+    private String buildLineResult(int number) {
+        String multiplesResult = fizzBuzz.calculate(number);
+        if (multiplesResult.contains("3")) {
+            return "Fizz";
+        }
+        return multiplesResult;
     }
 }

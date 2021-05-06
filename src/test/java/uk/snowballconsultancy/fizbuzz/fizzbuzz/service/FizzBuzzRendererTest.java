@@ -22,7 +22,7 @@ class FizzBuzzRendererTest {
     private FizzBuzzRenderer fizzBuzzRenderer;
 
     @Test
-    public void weOutpuitBasedOnResultFromFizzBuzz(){
+    public void weOutputBasedOnResultFromFizzBuzz(){
 
         when(mockFizzBuzz.calculate(anyInt())).thenReturn("1");
         when(mockFizzBuzz.calculate(1)).thenReturn("Fizz");
@@ -31,5 +31,15 @@ class FizzBuzzRendererTest {
 
         String result = fizzBuzzRenderer.fetchResult();
         assertThat(result, startsWith("Fizz\n1\nBuzz\n1\nFizzBuzz"));
+    }
+
+    @Test
+    public void weOutputBasedOnIfNumberContains3(){
+
+        when(mockFizzBuzz.calculate(anyInt())).thenReturn("1");
+        when(mockFizzBuzz.calculate(3)).thenReturn("Fizz");
+
+        String result = fizzBuzzRenderer.fetchResult();
+        assertThat(result, startsWith("1\n1\nFizz\n1"));
     }
 }
