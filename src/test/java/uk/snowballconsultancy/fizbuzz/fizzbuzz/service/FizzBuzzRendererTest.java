@@ -8,6 +8,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import uk.snowballconsultancy.fizbuzz.fizzbuzz.domain.FizzBuzz;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.startsWith;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.*;
@@ -37,9 +38,19 @@ class FizzBuzzRendererTest {
     public void weOutputBasedOnIfNumberContains3(){
 
         when(mockFizzBuzz.calculate(anyInt())).thenReturn("1");
-        when(mockFizzBuzz.calculate(3)).thenReturn("Fizz");
+        when(mockFizzBuzz.calculate(13)).thenReturn("13");
 
         String result = fizzBuzzRenderer.fetchResult();
-        assertThat(result, startsWith("1\n1\nFizz\n1"));
+        assertThat(result, startsWith("1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nFizz\n1"));
+    }
+
+    @Test
+    public void weOutputBasedOnIfNumberContains5(){
+
+        when(mockFizzBuzz.calculate(anyInt())).thenReturn("1");
+        when(mockFizzBuzz.calculate(25)).thenReturn("25");
+
+        String result = fizzBuzzRenderer.fetchResult();
+        assertThat(result, startsWith("1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nBuzz"));
     }
 }

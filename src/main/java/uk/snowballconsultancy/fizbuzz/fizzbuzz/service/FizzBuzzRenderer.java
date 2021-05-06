@@ -32,6 +32,9 @@ public class FizzBuzzRenderer {
         if (multiplesResult.contains("3")) {
             return "Fizz";
         }
+        if (multiplesResult.contains("5")) {
+            return "Buzz";
+        }
         return multiplesResult;
     }
 }

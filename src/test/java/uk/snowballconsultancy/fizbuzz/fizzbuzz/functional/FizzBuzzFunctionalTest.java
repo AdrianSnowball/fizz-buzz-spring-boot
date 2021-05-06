@@ -76,14 +76,14 @@ public class FizzBuzzFunctionalTest {
                     "49\n" +
                     "Buzz\n" +
                     "Fizz\n" +
-                    "52\n" +
+                    "Buzz\n" +
                     "Fizz\n" +
                     "Fizz\n" +
                     "Buzz\n" +
-                    "56\n" +
+                    "Buzz\n" +
                     "Fizz\n" +
-                    "58\n" +
-                    "59\n" +
+                    "Buzz\n" +
+                    "Buzz\n" +
                     "FizzBuzz\n" +
                     "61\n" +
                     "62\n" +
