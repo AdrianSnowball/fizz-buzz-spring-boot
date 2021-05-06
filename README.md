@@ -31,4 +31,4 @@ think of. I have written the smallest amount of code to pass the test.
 
 ####Significant Commit 3
 
-Mininum code for getting input of 3 working.
+Minimum code for getting input of 3 working.
