@@ -32,3 +32,7 @@ think of. I have written the smallest amount of code to pass the test.
 ####Significant Commit 3
 
 Minimum code for getting input of 3 working.
+
+####Significant Commit 4
+
+Parameterized test for multiples of 3

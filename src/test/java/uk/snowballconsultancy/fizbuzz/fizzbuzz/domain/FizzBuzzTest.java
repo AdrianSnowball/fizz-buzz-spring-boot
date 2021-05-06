@@ -2,6 +2,8 @@ package uk.snowballconsultancy.fizbuzz.fizzbuzz.domain;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -30,10 +32,11 @@ class FizzBuzzTest {
         assertThat(result, equalTo("2"));
     }
 
-    @Test
-    public void weGetFizzWhenThree() {
+    @ParameterizedTest
+    @ValueSource(ints = {3, 6, 9, 12, 33, 48, 72})
+    public void weGetFizzWhenMultipleOfThree(int number) {
 
-        String result = fizzBuzz.calculate(3);
+        String result = fizzBuzz.calculate(number);
         assertThat(result, equalTo("Fizz"));
     }
 
